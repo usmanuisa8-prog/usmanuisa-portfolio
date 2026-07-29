@@ -1,0 +1,305 @@
+/* ===================================
+   Layout Utilities
+=================================== */
+
+
+/* ===============================
+   Container
+=============================== */
+
+.container {
+
+    max-width: var(--container-width);
+
+    margin: 0 auto;
+
+}
+
+
+/* ===============================
+   Sections
+=============================== */
+
+section {
+
+    padding: var(--section-padding);
+
+}
+
+
+/* ===============================
+   Section Title
+=============================== */
+
+.section-title {
+
+    margin-bottom: 70px;
+
+    text-align: center;
+
+}
+
+
+.section-title h2 {
+
+    margin-bottom: 12px;
+
+}
+
+
+.section-title p {
+
+    max-width: 650px;
+
+    margin: 0 auto;
+
+}
+
+
+
+/* ===================================
+   Header
+=================================== */
+
+.header {
+
+    position: fixed;
+
+    top: 0;
+
+    left: 0;
+
+    width: 100%;
+
+    z-index: 1000;
+
+    background: rgba(255,255,255,.75);
+
+    backdrop-filter: blur(16px);
+
+    -webkit-backdrop-filter: blur(16px);
+
+    border-bottom: 1px solid rgba(255,255,255,.25);
+
+    transition: all .35s ease;
+
+}
+
+
+.header.scrolled {
+
+    background: rgba(255,255,255,.95);
+
+    box-shadow: 0 10px 30px rgba(0,0,0,.08);
+
+}
+
+
+
+/* ===================================
+   Navigation
+=================================== */
+
+.navbar {
+
+    max-width: 1200px;
+
+    height: 75px;
+
+    margin: auto;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    padding: 0 30px;
+
+}
+
+
+
+/* ===============================
+   Logo
+=============================== */
+
+.logo {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 14px;
+
+    transition: var(--transition);
+
+}
+
+
+.logo:hover {
+
+    transform: scale(1.03);
+
+}
+
+
+.logo-circle {
+
+    width: 48px;
+
+    height: 48px;
+
+    border-radius: 50%;
+
+    background: var(--primary);
+
+    color: white;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    font-weight: 700;
+
+    font-size: 18px;
+
+}
+
+
+.logo-text {
+
+    display: flex;
+
+    flex-direction: column;
+
+}
+
+
+.logo-text .name {
+
+    font-weight: 700;
+
+    color: var(--text);
+
+}
+
+
+.logo-text .title {
+
+    font-size: 13px;
+
+    color: var(--text-light);
+
+}
+
+
+
+/* ===================================
+   Navigation Menu
+=================================== */
+
+.nav-menu {
+
+    display: flex;
+
+    list-style: none;
+
+    gap: 35px;
+
+}
+
+
+.nav-menu a {
+
+    position: relative;
+
+    font-weight: 600;
+
+    color: var(--text);
+
+    padding: 8px 0;
+
+}
+
+
+.nav-menu a::after {
+
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+
+    bottom: -5px;
+
+    width: 0;
+
+    height: 2px;
+
+    background: var(--primary);
+
+    transition: var(--transition);
+
+}
+
+
+.nav-menu a:hover::after {
+
+    width: 100%;
+
+}
+
+
+.nav-menu a:hover {
+
+    color: var(--primary);
+
+}
+
+
+.nav-menu a.active {
+
+    color: var(--primary);
+
+}
+
+
+.nav-menu a.active::after {
+
+    width: 100%;
+
+}
+
+
+
+/* ===================================
+   Hamburger Menu
+=================================== */
+
+.hamburger {
+
+    display: none;
+
+    cursor: pointer;
+
+}
+
+
+.bar {
+
+    display: block;
+
+    width: 26px;
+
+    height: 3px;
+
+    margin: 5px auto;
+
+    background: #222;
+
+    transition: .3s;
+
+}

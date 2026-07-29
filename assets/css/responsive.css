@@ -1,0 +1,378 @@
+/* ===================================
+   Responsive Design
+=================================== */
+
+
+/* ===================================
+   Tablet & Small Desktop
+=================================== */
+
+@media (max-width: 992px) {
+
+
+    /* Hero */
+
+    .hero {
+
+        flex-direction: column-reverse;
+
+        text-align: center;
+
+    }
+
+
+    .hero-description {
+
+        margin:
+
+        0 auto 35px;
+
+    }
+
+
+    .hero-buttons {
+
+        justify-content: center;
+
+    }
+
+
+    .hero-social {
+
+        justify-content: center;
+
+    }
+
+
+    .availability {
+
+        justify-content: center;
+
+    }
+
+
+    .image-wrapper {
+
+        width: 300px;
+
+        height: 300px;
+
+    }
+
+
+
+    /* Services */
+
+    .services-container {
+
+        grid-template-columns: repeat(2,1fr);
+
+    }
+    /* ===================================
+   About Responsive
+=================================== */
+
+
+@media(max-width:900px){
+
+
+    .about-container{
+
+        flex-direction:column;
+
+        gap:40px;
+
+        text-align:center;
+
+    }
+
+
+
+    .about-content h3{
+
+        font-size:28px;
+
+    }
+
+
+
+    .about-info{
+
+        grid-template-columns:1fr;
+
+    }
+
+
+
+    .stats{
+
+        grid-template-columns:1fr;
+
+    }
+
+
+}
+}
+
+
+
+/* ===================================
+   Mobile Navigation
+=================================== */
+
+@media (max-width: 768px) {
+
+
+    .hamburger {
+
+        display: block;
+
+    }
+
+
+
+    .nav-menu {
+
+        position: fixed;
+
+        left: -100%;
+
+        top: 75px;
+
+        width: 100%;
+
+        background: white;
+
+        flex-direction: column;
+
+        text-align: center;
+
+        padding: 30px 0;
+
+        gap: 25px;
+
+        transition: .3s;
+
+    }
+
+
+
+    .nav-menu.active {
+
+        left: 0;
+
+    }
+
+
+
+    /* About */
+
+    .about-container {
+
+        flex-direction: column;
+
+    }
+
+
+
+    .about-info {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+
+    .section-title h2 {
+
+        font-size: 34px;
+
+    }
+
+
+
+    .about-content {
+
+        text-align: center;
+
+    }
+
+
+
+    /* Skills */
+
+    .skills-container {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+
+    .professional-skills {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+
+    /* Contact */
+
+    .contact-container {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+}
+
+
+
+/* ===================================
+   Small Mobile Devices
+=================================== */
+
+@media (max-width: 600px) {
+
+
+    /* Services */
+
+    .services-container {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+
+    /* Hero Image */
+
+    .hero-image img {
+
+        width: 280px;
+
+    }
+
+
+
+    .image-wrapper {
+
+        width: 280px;
+
+        height: 280px;
+
+    }
+
+
+
+    /* Buttons */
+
+    .hero-buttons {
+
+        flex-direction: column;
+
+        align-items: center;
+
+    }
+
+
+}
+/* ===================================
+   Skills Responsive
+=================================== */
+
+
+@media(max-width:1000px){
+
+
+    .skills-grid{
+
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
+
+}
+
+
+
+@media(max-width:600px){
+
+
+    .skills-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+
+}
+@media(max-width:900px){
+
+
+.services-container{
+
+    grid-template-columns:repeat(2,1fr);
+
+}
+
+
+}
+
+
+@media(max-width:600px){
+
+
+.services-container{
+
+    grid-template-columns:1fr;
+
+}
+
+
+}
+@media(max-width:1000px){
+
+
+.portfolio-container{
+
+    grid-template-columns:repeat(2,1fr);
+
+}
+
+
+}
+
+
+
+@media(max-width:600px){
+
+
+.portfolio-container{
+
+    grid-template-columns:1fr;
+
+}
+
+
+}
+@media(max-width:900px){
+
+
+.contact-container{
+
+    grid-template-columns:1fr;
+
+}
+
+
+.contact-social{
+
+    margin-top:30px;
+
+}
+
+
+}
